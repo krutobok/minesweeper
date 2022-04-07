@@ -1,0 +1,132 @@
+body{
+    zoom: 250%;
+}
+
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.grid div{
+    border: 1px solid blue;
+    background-color: #f1ffff;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.grid .boom{
+    background-color: #f1ffff;
+}
+
+.square{
+    color: #f1ffff;
+}
+
+.index-0.active{
+    background-color: darkgray;
+}
+
+.index-1.active{
+    color: green;
+}
+.index-2.active{
+    color: blue;
+}
+.index-3.active{
+     color: darkblue;
+ }
+.index-4.active{
+    color: pink;
+}
+.index-5.active{
+    color: deeppink;
+}
+.index-6.active{
+    color:orangered;
+}
+.index-7.active{
+    color: red;
+}
+.index-8.active{
+    color: darkred;
+}
+.grid .context{
+    background-image: url('img/flag.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0);
+}
+
+.grid .boom.active{
+    background-image: url( "img/boom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+.statistics{
+    display: flex;
+}
+.time{
+    min-width: 90px;
+}
+.booms{
+    min-width: 70px;
+}
+.booms__current{
+    color: red;
+    font-weight: 600;
+}
+
+.grid .boom.visible{
+    background-image: url( "img/boom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f1ffff;
+}
+.popup__inner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: 0 auto;
+    background-color: gray;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+}
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.popup__title {
+    margin-bottom: 35px;
+}
+.button__start, .button__prev{
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    height: 20px;
+}
+.button__container{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+}
+
+@media (max-height: 800px) {
+    .grid div{
+        width: 14px;
+        height: 14px;
+    }
+    body{
+        zoom: 200%;
+    }
+}
